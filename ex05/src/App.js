@@ -1,4 +1,4 @@
-import postRequest from './PostRequest';
+import PostRequest from './PostRequest';
 import './App.css';
 
 function App() {

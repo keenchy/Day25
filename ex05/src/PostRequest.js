@@ -10,9 +10,9 @@ class PostRequest extends Component {
     componentDidMount() {
 
         const requestOptions = {
-            method: 'Post',
+            method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ title: 'React Post Request Examples' })
+            body: JSON.stringify({ title: 'React POST Request Examples' })
         };
 
         fetch('https://jsonplaceholder.typicode.com/posts', requestOptions)
@@ -28,7 +28,7 @@ class PostRequest extends Component {
             div className = "card text-center m-3" >
 
             <
-            h5 className = "card-header" > Simple Post Request < /h5>
+            h5 className = "card-header" > Simple POST Request < /h5>
 
             <
             div className = "card-body" > Article Id: { articleId } < /div>
@@ -37,6 +37,7 @@ class PostRequest extends Component {
             /div >
         );
     }
+}
 
 
-    export default postRequest;
+export default PostRequest;
