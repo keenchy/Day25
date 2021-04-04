@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
 
-class getRequestAsyncAwait extends Component {
+class GetRequestAsyncAwait extends Component {
     constructor(props) {
         super(props);
         this.state = { totalReactpackages: null }
     }
 
-    componentDidMount() {
+    async componentDidMount() {
         const response = await fetch('https://api.npms.io/v2/search?q=react');
         const data = await response.json();
         this.setState({ totalReactpackages: data.total });
@@ -30,4 +30,4 @@ class getRequestAsyncAwait extends Component {
     }
 }
 
-export default getRequestAsyncAwait;
+export default GetRequestAsyncAwait;

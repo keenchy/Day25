@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 
-class getRequestSetHeaders extends Component {
+class GetRequestSetHeaders extends Component {
     constructor(props) {
         super(props);
         this.state = { totalReactpackages: null }
